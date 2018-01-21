@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="deepin.com.leefacedetectdemo">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +18,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".camera_real_time_detect.Camera2Activity" />
+        <activity android:name=".camera_real_time_detect.Camera2Util_Test1" />
+        <activity android:name=".camera_real_time_detect.CameraActivity"></activity>
+        <activity android:name=".camera_real_time_detect.CameraGetEveryFrame">
+
+        </activity>
+        <activity android:name=".TakeCameraFrameToDetectActivity">
+
         </activity>
     </application>
 
